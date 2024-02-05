@@ -1,17 +1,6 @@
-import os
-
-port = int(os.environ.get('PORT', 5000))
-
-app.run(host='0.0.0.0', port=port, debug=True)
-
 from flask import Flask, render_template, redirect, url_for
-from flask_restful import Resource, Api, reqparse, abort, fields, marshal_with
-from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///sqlite.db'
-db = SQLAlchemy(app)
 
 # Define the routes and their corresponding names
 routes = [
@@ -47,4 +36,4 @@ def home():
     return redirect(url_for("about"))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000, host='0.0.0.0')
+    app.run()
