@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}
+	About
+{% endblock %}
+
+{% block about_nav %}
+	<a href="./about" style="text-shadow:0px 0px 1px black;" class="nav-text">ABOUT</a>
+{% endblock %}
+
+{% block content %}
+			<div style="--overlay-color: #bbe6e0;" class="sticker-box">
+				<div class="box-info">
+					<h1>Welcome</h1>
+					<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit ligula arcu. Suspendisse potenti. Suspendisse cursus, lorem id efficitur rhoncus, massa mi porttitor enim, quis auctor urna nisl et mi. Praesent eleifend euismod nisl sed cursus. Nulla quis purus erat. Donec justo orci, pretium id magna id, vulputate suscipit magna. Donec vitae libero in ex finibus lacinia pretium eu est. Curabitur id arcu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pellentesque nisi molestie volutpat pretium. Quisque condimentum ultrices massa. Ut fermentum augue nisl, ac dictum nulla placerat eget. Curabitur gravida neque quis mi vehicula accumsan. Vivamus ultrices nisl sed libero lobortis, vel egestas ligula volutpat.
+
+					</p>
+				</div>
+				
+				<img class="sticker" src={{ url_for('static', filename='assets/welcome.png') }}>
+			</div>
+			</br>
+
+			<div style="--overlay-color: #f5c3c3;" class="sticker-box">
+				<div class="box-info">
+					<h1>Welcome</h1>
+					<p>
+          test
+					</p>
+				</div>
+				
+				<img class="sticker" src={{ url_for('static', filename='assets/luka.png') }}>
+			</div>
+			</br>
+
+			<div style="--overlay-color: #fcf8a8;" class="sticker-box">
+				<div class="box-info">
+					<h1>Socials</h1>
+					<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit ligula arcu. Suspendisse potenti. Suspendisse cursus, lorem id efficitur rhoncus, massa mi porttitor enim, quis auctor urna nisl et mi. Praesent eleifend euismod nisl sed cursus. Nulla quis purus erat. Donec justo orci, pretium id magna id, vulputate suscipit magna. Donec vitae libero in ex finibus lacinia pretium eu est. Curabitur id arcu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pellentesque nisi molestie volutpat pretium. Quisque condimentum ultrices massa. Ut fermentum augue nisl, ac dictum nulla placerat eget. Curabitur gravida neque quis mi vehicula accumsan. Vivamus ultrices nisl sed libero lobortis, vel egestas ligula volutpat.
+
+					</p>
+
+					<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit ligula arcu. Suspendisse potenti. Suspendisse cursus, lorem id efficitur rhoncus, massa mi porttitor enim, quis auctor urna nisl et mi. Praesent eleifend euismod nisl sed cursus. Nulla quis purus erat. Donec justo orci, pretium id magna id, vulputate suscipit magna. Donec vitae libero in ex finibus lacinia pretium eu est. Curabitur id arcu risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pellentesque nisi molestie volutpat pretium. Quisque condimentum ultrices massa. Ut fermentum augue nisl, ac dictum nulla placerat eget. Curabitur gravida neque quis mi vehicula accumsan. Vivamus ultrices nisl sed libero lobortis, vel egestas ligula volutpat.
+
+					</p>
+				</div>
+				
+				<img class="sticker" src={{ url_for('static', filename='assets/social.png') }}>
+			</div>
+			</br>
+		</div>
+{% endblock %}

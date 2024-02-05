@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+		<link rel=stylesheet href={{ url_for('static', filename='styles.css') }}>
+		<title>
+			WVS - {% block title %}{% endblock %}
+		</title>
+	</head>
+	<body>
+
+    <!-- Navbar -->
+		<nav>
+			<a href="/about" class="logo"><img src={{ url_for('static', filename='assets/logo.webp') }} alt="Logo"></a>
+
+			<div class="wide-nav-bar">
+				<ul class="nav_list">
+					<li class="nav_list_item">
+						{% block about_nav %}
+						<a href="./about" class="nav-text">ABOUT</a>
+						{% endblock %}
+					</li>
+
+					<li class="nav_list_item">
+						{% block news_nav %}
+						<a href="./news" class="nav-text">NEWS</a>
+						{% endblock %}
+					</li>
+
+					<li class="nav_list_item">
+						{% block calendar_nav %}
+						<a href="./calendar" class="nav-text">CALENDAR</a>
+						{% endblock %}
+					</li>
+
+					<li class="nav_list_item">
+						{% block resources_nav %}
+						<a href="./resources" class="nav-text">RESOURCES</a>
+						{% endblock %}
+					</li>
+
+					<li class="nav_list_item">
+						{% block contact_nav %}
+						<a href="./contact" class="nav-text">CONTACT</a>
+						{% endblock %}
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="content">
+			{% block content %}{% endblock %}
+		</div>
+	</body>
+</html>

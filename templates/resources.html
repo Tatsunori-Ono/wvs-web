@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Resources
+{% endblock %}
+
+{% block resources_nav %}
+	<a href="./resources" style="text-shadow:0px 0px 1px black;" class="nav-text">RESOURCES</a>
+{% endblock %}
+
+{% block content %}
+	<div class="sticker-box">
+		<div class="box-info">
+			<h1>Resources</h1>
+			<p>
+			Here are some resources we provide.
+
+			</p>
+		</div>
+
+		<img class="sticker" src={{ url_for('static', filename='assets/welcome.png') }}>
+	</div>
+	</br>
+{% endblock %}
